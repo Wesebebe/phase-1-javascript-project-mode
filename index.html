@@ -9,18 +9,29 @@
 </head>
 <body>
     <h1>Weather App</h1>
-    <p>Type the name of your favourite city and press enter to get the current weather.</p>
+    <p>Type the name of your favourite city and <span style>press</span> enter to get the current weather.</p>
     <form id="form">
-        <input type="text" id="search" placeholder="City" autocomplete="off">
+        <input type="text" id="search" placeholder="City" autocomplete>
     </form>
     <main id="main">
-        <div>Click the image:</div>
-        <br /><br />
-        <img src="./images/img1.jpg" onclick="changeImage(this)" />
   
 
     </main>
+    <h3>Click to swap images</h3>
+    <input type="button" onclick="swapImages()" value = "Swap Image">
+<br>
+    <img src = "./images/img1.jpg" id = "getImage" >
 
-    <script src="index.js"></script>
+    <script src="index.js">
+            /*function swapImages(){
+    var get = document.getElementById('getImage');
+    if (get.src.match("./images/img1.jpg")){
+    get.src = "./images/img3.jpg";
+    }
+    else{
+    get.src = "./images/img4.jpg";
+    }
+    }*/
+    </script>
 </body>
 </html>

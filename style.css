@@ -1,31 +1,4 @@
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-input {
-    padding: 1rem;
-    border-radius: 25px;
-    border: none;
-    background-color: #fff;
-    font-family: inherit;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    min-width: 300px;
-    font-size: 1rem;
-}*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");*/
 * {
     box-sizing: border-box;
 }
@@ -39,8 +12,8 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-    background-image: url('./images/img2.jpg');
-    color: yellowgreen;
+    background-image: url('./images/img4.jpg');
+    color: red;
 }
 input {
     padding: 1rem;
@@ -63,5 +36,5 @@ input:focus {
     margin-bottom: 0;
     display: flex;
     align-items: center;
-} /* .weather img{ transform: scale(2); } */
+} 
 

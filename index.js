@@ -1,4 +1,5 @@
 //DOM manipulation, creating variables
+document.addEventListener("DOMContentLoaded", getWeatherByLocation)
 const apiKey = "ef4b85e364e1dea25dafa5df0ed26565";
 
 const main = document.getElementById('main');
@@ -17,6 +18,7 @@ async function getWeatherByLocation(city){
            addWeatherToPage(respData);
           
      }
+
 
       function addWeatherToPage(data){
           const temp = Ktoc(data.main.temp);
@@ -54,6 +56,12 @@ async function getWeatherByLocation(city){
 
      });
 
-     function changeImage(image) {
-        image.src = './images/img3';
-    }
+     function swapImages(){
+        var get = document.getElementById('getImage');
+        if (get.src.match("./images/img1.jpg")){
+        get.src = "./images/img3.jpg";
+        }
+        else{
+        get.src = "./images/img4.jpg";
+        }
+    };
