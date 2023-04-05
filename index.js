@@ -52,3 +52,7 @@ async function getWeatherByLocation(city){
         }
 
      });
+
+     function changeImage(image) {
+        image.src = './images/img3';
+    }

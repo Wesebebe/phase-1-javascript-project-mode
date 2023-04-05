@@ -39,6 +39,8 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    background-image: url('./images/img2.jpg');
+    color: yellowgreen;
 }
 input {
     padding: 1rem;
