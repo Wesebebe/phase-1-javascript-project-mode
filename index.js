@@ -1,3 +1,4 @@
+//DOM manipulation, creating variables
 const apiKey = "ef4b85e364e1dea25dafa5df0ed26565";
 
 const main = document.getElementById('main');
@@ -6,7 +7,7 @@ const search = document.getElementById('search');
   
 const url = (city)=> `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-
+//Fetch data from the API
 async function getWeatherByLocation(city){
      
          const resp = await fetch(url(city), {
@@ -30,7 +31,7 @@ async function getWeatherByLocation(city){
           `;
 
 
-        //   cleanup 
+        //Add content to main
           main.innerHTML= "";
            main.appendChild(weather);
       };
@@ -41,7 +42,7 @@ async function getWeatherByLocation(city){
      }
 
 
-
+//Event listener
      form.addEventListener('submit',(e) =>{
         e.preventDefault();
 
